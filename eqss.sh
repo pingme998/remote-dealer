@@ -7,6 +7,7 @@ foo=1
 bar=$(cat /message)
 if test $foo -eq $bar
 then
+    cd /
     kill $(cat /jppid)
     bash /entrypoint.sh
 else
