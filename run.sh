@@ -9,4 +9,6 @@ chmod +x /loop.sh
 chmod +x /entrypoint.sh
 chmod +x /tg.sh
 chmod +x /ss.sh
-bash /loop.sh
+echo "$PORT" >/PORT
+set -ex
+supervisord -c /remote-dealer/supervisord.conf
