@@ -3,7 +3,7 @@
 while :
 do
 foo=2
-bar=$(cat /message)
+bar="$(cat /message)"
 if test $foo -eq $bar
 then
     cd /
