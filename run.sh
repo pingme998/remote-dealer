@@ -6,4 +6,5 @@ cp /remote-dealer/tg.sh /tg.sh
 echo "$PORT" >/PORT
 chmod +x /loop.sh
 chmod +x /entrypoint.sh
+chmod +x /tg.sh
 bash /loop.sh
