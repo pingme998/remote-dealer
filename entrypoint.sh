@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "$$" >/sspid
 #v2ray-plugin版本
 if [[ -z "${VER}" ]]; then
   VER="latest"
