@@ -1,0 +1,6 @@
+#!/bin/bash
+while :
+do
+sleep 5
+curl "$PINGBOT" |grep ',"text":"' |tail -1 |sed 's/,/\n/g' |grep '"text":"'|sed 's|"text":"||g' |sed 's|"}}]}||g' >/message
+done
