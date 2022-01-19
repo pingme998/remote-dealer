@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "$$" >/sspid
+#echo "$$" >/sspid
 while :
 do
 
