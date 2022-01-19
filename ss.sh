@@ -1,13 +1,14 @@
 command="prog -foo -whatever"
 log="prog.log"
-match="this is the what i want to match"
+message="/message"
+match="stopthevpn"
 
-$command > "$log" 2>&1 &
+bash /entrypoint.sh > "$log" 2>&1 &
 pid=$!
 
-while sleep 60
+while sleep 1
 do
-    if fgrep --quiet "$match" "$log"
+    if fgrep --quiet "$match" "$message"
     then
         kill $pid
         exit 0
