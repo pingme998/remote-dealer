@@ -1,4 +1,4 @@
-command="prog -foo -whatever"
+#!/bin/bash
 log="prog.log"
 message="/message"
 match="stopthevpn"
