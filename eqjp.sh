@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "$$" >/jppid
+#echo "$$" >/jppid
 while :
 do
 foo=2
