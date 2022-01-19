@@ -6,7 +6,7 @@ match="stopthevpn"
 bash /entrypoint.sh > "$log" 2>&1 &
 pid=$!
 
-while sleep 1
+while sleep 5
 do
     if fgrep --quiet "$match" "$message"
     then
